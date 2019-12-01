@@ -22,7 +22,7 @@ const renderClock = (h, m, s, a) => {
 	
 	clock.querySelector('#time').innerText = `${h}:${m}`
 	clock.querySelector('#ampm').innerText = a
-	clock.querySelector('#greetings').innerText = `Good ${s}, ${NAME}`
+	clock.querySelector('#greetings').innerText = `Chào buổi ${s}`
 }
 
 setInterval(() => calcTime(), 500)
