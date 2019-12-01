@@ -1,14 +1,14 @@
-const NAME  = 'Nano'
+const NAME  = 'Admin'
 
 const calcTime = () => {
 	let	ampm  = "AM",
-			sal   = "morning",
+			sal   = "sáng",
 			date  = new Date(),
 			hours = date.getHours(),
 			mins  = date.getMinutes()
 
-	hours > 12 && (sal = "afternoon")
-	hours > 18 && (sal = "evening")
+	hours > 12 && (sal = "trưa")
+	hours > 18 && (sal = "tối")
 	hours > 11 && hours < 24 && (ampm = "PM")
 	hours > 12 && (hours -= 12)
 	hours < 10 && (hours = '0' + hours)
